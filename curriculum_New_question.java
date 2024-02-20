@@ -1,7 +1,7 @@
 import java.util.Scanner;
 import java.util.Random;
 import java.util.Arrays;
-public class Main{
+public class curriculum_New_question{
 	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 		
