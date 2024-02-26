@@ -31,7 +31,7 @@ private static void printThreeValues2() {
 	double s = (double)second;
  double d = plus(f, s);
   System.out.println(d);
-  scanner.close();
+  
 	}
 private static double plus(double d1, double d2){
   return d1 + d2;
