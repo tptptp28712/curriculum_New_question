@@ -1,3 +1,5 @@
+package curriculum_New_question;
+
 import java.util.*;
 public class curriculum_New_question{
     private static void printThreeValues() {
