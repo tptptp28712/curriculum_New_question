@@ -1,41 +1,26 @@
-
 package curriculum_New_question;
-import java.util.Scanner;
-import java.util.Random;
-import java.util.Arrays;
-public class Main{
-	// Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
-	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
-		
-	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
-			
-	// Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
-		
-	// Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
-	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
-	// ※0は出力＆格納しないようにしてください。
-	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
-	// ※小数点以下も表示されるようにしてください。
-	
-	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
-	public static void main(String[] args) {
-    // 作成したメソッドをここで呼び出してください
-    // Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
-	String moji = "Hello", moji2 = "JavaSE";
+
+import java.util.*;
+public class curriculum_New_question{
+    private static void printThreeValues() {
+     // Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
+     String moji = "Hello";
+	String moji2 = "JavaSE";
 	int suuji = 11;
-	System.out.println(moji+" "+moji2+" "+suuji);
+System.out.println(moji+" "+moji2+" "+suuji);
+}
+private static void printThreeValues2() {
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 	 Scanner scanner = new Scanner(System.in);
-	    System.out.println("数字を入力してください");
+	    
 	    int first = scanner.nextInt();
-	    System.out.println("数字を入力してください");
+	    
 	    int second = scanner.nextInt();
 	    int sum = first * second;
-	    System.out.println("乗算は" + sum + "です");
+	    
 	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
-	Scanner scanner2 = new Scanner(System.in);
-    System.out.println("数字を入力してください。");
-    String hobby = scanner2.nextLine();
+    
+    String hobby = scanner.nextLine();
     String[] tokens = hobby.split("\\s+");
     for (int i = 0 ; i < tokens.length; i++){
       System.out.println( tokens[i]);
@@ -52,8 +37,8 @@ private static double plus(double d1, double d2){
 // Q5：引数に整数を渡すと、1～100までのランダムな数字を引数の回数分格納して
 	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
 	// ※0は出力＆格納しないようにしてください。
-	public static void main2(String[] args) {
-	     Scanner scanner = new Scanner(System.in);
+	public static void printThreeValues3() {
+	    Scanner scanner = new Scanner(System.in);
 int num = scanner.nextInt();
 int[] ss = new int[num];
 Random rand = new Random();
@@ -74,4 +59,12 @@ double average = Arrays.stream(ss).average().getAsDouble();
          flag = (average >= 50);
     System.out.println(flag);
 	}
-}
+
+	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
+	public static void main(String[] args) {
+    // 作成したメソッドをここで呼び出してください
+     printThreeValues();
+     printThreeValues2();
+     printThreeValues3();
+	}
+    	}
