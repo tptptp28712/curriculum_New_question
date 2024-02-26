@@ -7,12 +7,13 @@ public class curriculum_New_question{
      String moji = "Hello";
 	String moji2 = "JavaSE";
 	int suuji = 11;
+	 // 出力
 System.out.println(moji+" "+moji2+" "+suuji);
 }
 private static void printThreeValues2() {
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
 	 Scanner scanner = new Scanner(System.in);
-	    
+	    // 数字入力
 	    int first = scanner.nextInt();
 	    
 	    int second = scanner.nextInt();
@@ -40,11 +41,13 @@ private static double plus(double d1, double d2){
 	// ※0は出力＆格納しないようにしてください。
 	public static void printThreeValues3() {
 	    Scanner scanner = new Scanner(System.in);
+		// 数字入力
 int num = scanner.nextInt();
 int[] ss = new int[num];
 Random rand = new Random();
     int num2 = 0;
 int num3 =0;
+//　ランダム出力
 for(int v=1;v<=num;v++){
     num2 = rand.nextInt(100) + 1;
 System.out.println(num2);
