@@ -2,7 +2,7 @@ package curriculum_New_question;
 
 import java.util.*;
 public class curriculum_New_question{
-    private static void printThreeValues() {
+ private static void printThreeValues() {
      // Q1：引数に文字列型と整数型をいれてコンソールに「Hello JavaSE 11」と出力するメソッドを作成してください。
      String moji = "Hello";
 	String moji2 = "JavaSE";
@@ -30,6 +30,7 @@ private static void printThreeValues2() {
 	double s = (double)second;
  double d = plus(f, s);
   System.out.println(d);
+  scanner.close();
 	}
 private static double plus(double d1, double d2){
   return d1 + d2;
@@ -49,6 +50,7 @@ for(int v=1;v<=num;v++){
 System.out.println(num2);
 ss[num3] = num2;
 num3 = num3 + 1;
+
 }
 	// Q6：引数にQ5で作成したメソッドの返り値を受け取り、受け取った配列の要素の平均値をコンソールに出力するメソッドを作成してください。
 	// ※小数点以下も表示されるようにしてください。
@@ -58,6 +60,7 @@ double average = Arrays.stream(ss).average().getAsDouble();
         boolean flag = true;
          flag = (average >= 50);
     System.out.println(flag);
+    scanner.close();
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
