@@ -12,20 +12,16 @@ System.out.println(moji+" "+moji2+" "+suuji);
 }
 private static void printThreeValues2() {
 	// Q2：引数に整数を渡すと渡した値同士を乗算しコンソールに出力するメソッドを作成してください
-	 Scanner scanner = new Scanner(System.in);
-	    // 数字入力
-	    int first = scanner.nextInt();
-	    
-	    int second = scanner.nextInt();
+	　　int first = 5;
+	    int second = 6;
 	    int sum = first * second;
 	    
 	// Q3：引数として整数の配列を渡すと、受け取った値を順番にコンソールに出力するメソッドを作成してください
     
-    String hobby = scanner.nextLine();
-    String[] tokens = hobby.split("\\s+");
-    for (int i = 0 ; i < tokens.length; i++){
-      System.out.println( tokens[i]);
-  }
+   int[] array = {1,10,100};
+    for(int i=0; i<array.length; i++) {
+            System.out.println(array[i]);
+        }
   // Q4：Q2をオーバーロードして引数を小数2つに変更し、引数同士を和算しコンソールに出力してください。
   double f = (double)first;
 	double s = (double)second;
@@ -40,9 +36,9 @@ private static double plus(double d1, double d2){
 	// 格納した値を順番にコンソールで出力後、格納した値を返すメソッドを作成してください。
 	// ※0は出力＆格納しないようにしてください。
 	public static void printThreeValues3() {
-	    Scanner scanner = new Scanner(System.in);
+	    
 		// 数字入力
-int num = scanner.nextInt();
+int num = 5;
 int[] ss = new int[num];
 Random rand = new Random();
     int num2 = 0;
@@ -63,7 +59,7 @@ double average = Arrays.stream(ss).average().getAsDouble();
         boolean flag = true;
          flag = (average >= 50);
     System.out.println(flag);
-    scanner.close();
+  
 	}
 
 	// Q7：引数にQ6で作成したメソッドの返り値を受け取り、受け取った値が50以上ならばtrueそれ以外はfalseを返しコンソールに出力してください
